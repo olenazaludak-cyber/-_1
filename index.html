@@ -1,0 +1,298 @@
+html_content = """<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Алёна Залудяк | Дизайн интерьера с математической точностью</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Montserrat:wght@300;400;500;700&display=swap');
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #030712;
+        }
+        .heading-font {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .neon-glow:hover {
+            box-shadow: 0 0 20px rgba(34, 211, 238, 0.3);
+            border-color: rgba(34, 211, 238, 0.6);
+        }
+    </style>
+</head>
+<body class="text-neutral-100 selection:bg-cyan-500 selection:text-neutral-950 antialiased overflow-x-hidden">
+
+    <header class="fixed top-0 left-0 w-full z-50 bg-neutral-950/80 backdrop-blur-md border-b border-neutral-900">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="heading-font text-lg font-bold tracking-widest text-cyan-400">АЛЁНА ЗАЛУДЯК</a>
+            <nav class="hidden md:flex items-center space-x-8 text-sm tracking-wide text-neutral-400">
+                <a href="#portfolio" class="hover:text-cyan-400 transition-colors">проекты</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">экспертиза</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">контакты</a>
+            </nav>
+            <a href="https://t.me/AlenaZaludiak" target="_blank" class="px-5 py-2 border border-cyan-500/30 text-cyan-400 rounded-full text-xs tracking-wider uppercase hover:bg-cyan-500/10 transition-all">обсудить проект</a>
+        </div>
+    </header>
+
+    <section class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-cyan-950/20 via-neutral-950 to-neutral-950">
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#1f293710_1px,transparent_1px),linear-gradient(to_bottom,#1f293710_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
+        <div class="max-w-7xl mx-auto px-6 w-full relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center space-x-2 px-3 py-1 bg-cyan-950/40 border border-cyan-500/20 rounded-full text-xs text-cyan-400 tracking-wider uppercase">
+                    <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                    <span>интерьерная архитектура & менеджмент</span>
+                </div>
+                <h1 class="heading-font text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white leading-[1.1]">
+                    дизайн интерьера с <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-400">математической точностью</span>
+                </h1>
+                <p class="text-neutral-400 text-base sm:text-lg max-w-xl leading-relaxed">
+                    создание премиальных пространств с жестким контролем бюджета и сроков. в основе подхода лежит глубокое дизайн-мышление и многолетний управленческий опыт в финансовой сфере.
+                </p>
+                <div class="pt-4 flex flex-wrap gap-4">
+                    <a href="#portfolio" class="px-8 py-4 bg-gradient-to-r from-cyan-500 to-emerald-500 text-neutral-950 font-semibold rounded-lg hover:opacity-90 transition-opacity text-sm shadow-lg shadow-cyan-500/10">смотреть портфолио</a>
+                    <a href="#expertise" class="px-8 py-4 bg-neutral-900 border border-neutral-800 text-white rounded-lg hover:bg-neutral-800 transition-colors text-sm">моя экспертиза</a>
+                </div>
+            </div>
+            <div class="lg:col-span-5 relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-emerald-500 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+                <div class="relative bg-neutral-900 border border-neutral-800 rounded-2xl p-2 overflow-hidden aspect-[4/5] flex items-center justify-center text-neutral-500 text-sm text-center">
+                    <div class="space-y-2 p-6">
+                        <div class="text-cyan-400 font-mono text-xs">// фрейм для главного рендера</div>
+                        <p class="text-neutral-400 text-xs">здесь размещается полноэкранный визуальный акцент вашего лучшего проекта</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-32 border-t border-neutral-900 bg-neutral-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
+                <div>
+                    <p class="text-cyan-400 text-xs tracking-widest uppercase font-mono mb-2">// портфолио</p>
+                    <h2 class="heading-font text-3xl sm:text-4xl font-bold text-white">реализованные проекты</h2>
+                </div>
+                <p class="text-neutral-400 text-sm max-w-md">
+                    каждый объект спроектирован через призму аналитики сценариев жизни и реализован с бескомпромиссным контролем сметы.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div onclick="openModal('modal-case-1')" class="group cursor-pointer bg-neutral-900 border border-neutral-800 rounded-xl p-3 space-y-4 transition-all duration-300 neon-glow">
+                    <div class="aspect-video bg-neutral-800 rounded-lg flex items-center justify-center text-neutral-600 text-xs text-center p-4">
+                        [визуализация: апартаменты 120 м²]
+                    </div>
+                    <div class="px-2 pb-2 space-y-2">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-neutral-500">москва · 120 м²</span>
+                            <span class="text-xs px-2 py-0.5 bg-emerald-950/50 border border-emerald-500/30 text-emerald-400 rounded font-mono">смета: 98% точности</span>
+                        </div>
+                        <h3 class="heading-font text-lg font-semibold text-white group-hover:text-cyan-400 transition-colors">минимализм в деталях</h3>
+                        <p class="text-neutral-400 text-xs line-clamp-2">чистые линии современного минимализма, разработанные по принципам глубокого дизайн-мышления.</p>
+                    </div>
+                </div>
+
+                <div onclick="openModal('modal-case-2')" class="group cursor-pointer bg-neutral-900 border border-neutral-800 rounded-xl p-3 space-y-4 transition-all duration-300 neon-glow">
+                    <div class="aspect-video bg-neutral-800 rounded-lg flex items-center justify-center text-neutral-600 text-xs text-center p-4">
+                        [визуализация: пентхаус 180 м²]
+                    </div>
+                    <div class="px-2 pb-2 space-y-2">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-neutral-500">санкт-петербург · 180 м²</span>
+                            <span class="text-xs px-2 py-0.5 bg-emerald-950/50 border border-emerald-500/30 text-emerald-400 rounded font-mono">смета: 100% фикс</span>
+                        </div>
+                        <h3 class="heading-font text-lg font-semibold text-white group-hover:text-cyan-400 transition-colors">технологичный лофт</h3>
+                        <p class="text-neutral-400 text-xs line-clamp-2">интеграция сложных инженерных решений в открытое премиальное пространство.</p>
+                    </div>
+                </div>
+
+                <div onclick="openModal('modal-case-3')" class="group cursor-pointer bg-neutral-900 border border-neutral-800 rounded-xl p-3 space-y-4 transition-all duration-300 neon-glow">
+                    <div class="aspect-video bg-neutral-800 rounded-lg flex items-center justify-center text-neutral-600 text-xs text-center p-4">
+                        [визуализация: загородный дом 250 м²]
+                    </div>
+                    <div class="px-2 pb-2 space-y-2">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-neutral-500">пригород · 250 м²</span>
+                            <span class="text-xs px-2 py-0.5 bg-emerald-950/50 border border-emerald-500/30 text-emerald-400 rounded font-mono">смета: 97% точности</span>
+                        </div>
+                        <h3 class="heading-font text-lg font-semibold text-white group-hover:text-cyan-400 transition-colors">эко-минимализм</h3>
+                        <p class="text-neutral-400 text-xs line-clamp-2">природные фактуры и эргономичные планировочные решения для большой семьи.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="expertise" class="py-32 border-t border-neutral-900 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-neutral-900/50 via-neutral-950 to-neutral-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-3xl mb-20 space-y-4">
+                <p class="text-cyan-400 text-xs tracking-widest uppercase font-mono">// бэкграунд</p>
+                <h2 class="heading-font text-3xl sm:text-4xl font-bold text-white">уникальный сплав системности и творчества</h2>
+                <p class="text-neutral-400 text-base leading-relaxed">
+                    три года успешной практики в дизайне интерьеров подкреплены фундаментальным управленческим опытом. это осознанный переход из масштабного финансового менеджмента в сферу проектирования, где порядок в документах и прозрачность бюджетов важны так же, как и красота финишной отделки.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="bg-neutral-900/40 border border-neutral-800 p-8 rounded-2xl space-y-6">
+                    <div class="h-12 w-12 rounded-xl bg-cyan-950/60 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" /></svg>
+                    </div>
+                    <h3 class="heading-font text-xl font-semibold text-white">дизайн и архитектура</h3>
+                    <div class="space-y-4 text-sm">
+                        <div>
+                            <h4 class="text-cyan-400 font-medium mb-1">профильное образование</h4>
+                            <p class="text-neutral-400">выпускница школы маши черной. регулярное повышение квалификации и углубленная практика в направлении дизайн-мышления.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-cyan-400 font-medium mb-1">твердые навыки</h4>
+                            <p class="text-neutral-400">объемно-пространственное проектирование, колористика, создание эргономичных планировочных решений, знание современных отделочных материалов и узлов монтажа.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-neutral-900/40 border border-neutral-800 p-8 rounded-2xl space-y-6">
+                    <div class="h-12 w-12 rounded-xl bg-emerald-950/60 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h2a2 2 0 01-2-2z" /></svg>
+                    </div>
+                    <h3 class="heading-font text-xl font-semibold text-white">финансы и менеджмент</h3>
+                    <div class="space-y-4 text-sm">
+                        <div>
+                            <h4 class="text-emerald-400 font-medium mb-1">прошлый опыт</h4>
+                            <p class="text-neutral-400">многолетняя карьера в качестве руководителя финансово-экономической службы. построение систем бюджетирования, финансового планирования и управленческого учета.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-emerald-400 font-medium mb-1">гибкие навыки</h4>
+                            <p class="text-neutral-400">системное мышление, жесткий тайм-менеджмент, управление крупными бюджетами, организация эффективной работы подрядчиков и тотальный контроль строительных процессов.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-32 border-t border-neutral-900 bg-neutral-950 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10 space-y-12">
+            <div class="space-y-4">
+                <p class="text-cyan-400 text-xs tracking-widest uppercase font-mono">// контакты</p>
+                <h2 class="heading-font text-3xl sm:text-4xl font-bold text-white">обсудим ваш будущий интерьер?</h2>
+                <p class="text-neutral-400 text-sm max-w-md mx-auto">
+                    оставьте заявку для первичной консультации. мы начнем с анализа ваших пожеланий, разбора сценариев пространства и предварительного планирования инвестиций.
+                </p>
+            </div>
+
+            <form class="bg-neutral-900/60 border border-neutral-800 p-8 sm:p-10 rounded-2xl text-left space-y-6 max-w-xl mx-auto" onsubmit="event.preventDefault(); alert('заявка успешно отправлена!');">
+                <div class="space-y-2">
+                    <label class="text-xs text-neutral-400 font-mono">как к вам обращаться :</label>
+                    <input type="text" required class="w-full bg-neutral-950 border border-neutral-800 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-cyan-400 transition-colors" placeholder="ваше имя">
+                </div>
+                <div class="space-y-2">
+                    <label class="text-xs text-neutral-400 font-mono">телефон или telegram :</label>
+                    <input type="text" required class="w-full bg-neutral-950 border border-neutral-800 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-cyan-400 transition-colors" placeholder="@username или +7...">
+                </div>
+                <button type="submit" class="w-full py-4 bg-gradient-to-r from-cyan-500 to-emerald-500 text-neutral-950 font-semibold rounded-lg hover:opacity-90 transition-opacity text-sm tracking-wide uppercase">сделать первый шаг</button>
+            </form>
+
+            <div class="pt-6 flex justify-center space-x-6 text-sm text-neutral-500">
+                <a href="https://t.me/AlenaZaludiak" target="_blank" class="hover:text-cyan-400 transition-colors font-mono">@AlenaZaludiak</a>
+                <span>·</span>
+                <span class="font-mono">дизайн & аналитика</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 border-t border-neutral-900 bg-neutral-950 text-center text-xs text-neutral-600">
+        <p>&copy; 2026 Алёна Залудяк. все права защищены. разработано с математической точностью.</p>
+    </footer>
+
+    <div id="modal-case-1" class="fixed inset-0 z-50 hidden bg-neutral-950/80 backdrop-blur-md items-center justify-center p-4">
+        <div class="bg-neutral-900 border border-neutral-800 max-w-2xl w-full rounded-2xl overflow-hidden shadow-2xl relative max-h-[90vh] overflow-y-auto">
+            <button onclick="closeModal('modal-case-1')" class="absolute top-4 right-4 text-neutral-400 hover:text-white">&times;</button>
+            <div class="p-6 sm:p-8 space-y-6">
+                <h3 class="heading-font text-2xl font-bold text-white">минимализм в деталях — апартаменты 120 м²</h3>
+                <div class="aspect-video bg-neutral-800 rounded-lg flex items-center justify-center text-neutral-600 text-xs">[галерея слайдера проектов]</div>
+                <div class="grid grid-cols-2 gap-4 text-xs font-mono bg-neutral-950 p-4 rounded-xl border border-neutral-800">
+                    <div><span class="text-neutral-500">локация :</span> москва</div>
+                    <div><span class="text-neutral-500">площадь :</span> 120 кв. м</div>
+                    <div><span class="text-neutral-500">стиль :</span> современный минимализм</div>
+                    <div><span class="text-neutral-500">точность сметы :</span> 98%</div>
+                </div>
+                <div class="space-y-3 text-sm text-neutral-300">
+                    <p><strong class="text-cyan-400 font-normal">// задача :</strong> разработка интерьера через призму дизайн-мышления. фокус на анализе сценариев жизни владельцев, эргономике и чистоте линий, заложенных школой маши черной.</p>
+                    <p><strong class="text-emerald-400 font-normal">// финансовый аудит :</strong> плановый бюджет сметы реализован с точностью до 98%. благодаря внедрению системы планирования и управленческого учета на этапе проектирования, заказчик полностью избежал скрытых расходов строителей и хаотичных трат во время комплектации.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-case-2" class="fixed inset-0 z-50 hidden bg-neutral-950/80 backdrop-blur-md items-center justify-center p-4">
+        <div class="bg-neutral-900 border border-neutral-800 max-w-2xl w-full rounded-2xl overflow-hidden shadow-2xl relative max-h-[90vh] overflow-y-auto">
+            <button onclick="closeModal('modal-case-2')" class="absolute top-4 right-4 text-neutral-400 hover:text-white">&times;</button>
+            <div class="p-6 sm:p-8 space-y-6">
+                <h3 class="heading-font text-2xl font-bold text-white">технологичный лофт — пентхаус 180 м²</h3>
+                <div class="aspect-video bg-neutral-800 rounded-lg flex items-center justify-center text-neutral-600 text-xs">[галерея слайдера проектов]</div>
+                <div class="grid grid-cols-2 gap-4 text-xs font-mono bg-neutral-950 p-4 rounded-xl border border-neutral-800">
+                    <div><span class="text-neutral-500">локация :</span> санкт-петербург</div>
+                    <div><span class="text-neutral-500">площадь :</span> 180 кв. м</div>
+                    <div><span class="text-neutral-500">стиль :</span> индастриал премиум</div>
+                    <div><span class="text-neutral-500">точность сметы :</span> 100% фикс</div>
+                </div>
+                <div class="space-y-3 text-sm text-neutral-300">
+                    <p><strong class="text-cyan-400 font-normal">// задача :</strong> интеграция сложных инженерных систем умного дома и скрытого климат-контроля без ущерба для высоты потолков и чистоты архитектурных объемов.</p>
+                    <p><strong class="text-emerald-400 font-normal">// финансовый аудит :</strong> жесткое управление контрактами подрядчиков позволило зафиксировать финальную стоимость реализации на этапе подписания договора. переплаты отсутствуют.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-case-3" class="fixed inset-0 z-50 hidden bg-neutral-950/80 backdrop-blur-md items-center justify-center p-4">
+        <div class="bg-neutral-900 border border-neutral-800 max-w-2xl w-full rounded-2xl overflow-hidden shadow-2xl relative max-h-[90vh] overflow-y-auto">
+            <button onclick="closeModal('modal-case-3')" class="absolute top-4 right-4 text-neutral-400 hover:text-white">&times;</button>
+            <div class="p-6 sm:p-8 space-y-6">
+                <h3 class="heading-font text-2xl font-bold text-white">эко-минимализм — загородный дом 250 м²</h3>
+                <div class="aspect-video bg-neutral-800 rounded-lg flex items-center justify-center text-neutral-600 text-xs">[галерея слайдера проектов]</div>
+                <div class="grid grid-cols-2 gap-4 text-xs font-mono bg-neutral-950 p-4 rounded-xl border border-neutral-800">
+                    <div><span class="text-neutral-500">локация :</span> пригород</div>
+                    <div><span class="text-neutral-500">площадь :</span> 250 кв. м</div>
+                    <div><span class="text-neutral-500">стиль :</span> эко-минимализм</div>
+                    <div><span class="text-neutral-500">точность сметы :</span> 97%</div>
+                </div>
+                <div class="space-y-3 text-sm text-neutral-300">
+                    <p><strong class="text-cyan-400 font-normal">// задача :</strong> организация эргономичного пространства для трех поколений семьи с использованием износостойких натуральных материалов.</p>
+                    <p><strong class="text-emerald-400 font-normal">// financial аудит :</strong> за счет глубокого анализа рынка отделочных материалов была проведена грамотная оптимизация стоимости без потери визуального и эксплуатационного качества премиум-сегмента.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal(id) {
+            const modal = document.getElementById(id);
+            if (modal) {
+                modal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            }
+        }
+        function closeModal(id) {
+            const modal = document.getElementById(id);
+            if (modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+        // закрытие по клику вне модалки
+        window.onclick = function(event) {
+            if (event.target.classList.contains('bg-neutral-950/80')) {
+                event.target.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+    </script>
+</body>
+</html>
+"""
+
+with open("index.html", "w", encoding="utf-8") as f:
+    f.write(html_content)
+
+print("File index.html created successfully.")
